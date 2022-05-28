@@ -1,7 +1,121 @@
+:root {
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /*  Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  /* Font */
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--Very-Light-Gray);
+  display: grid;
+  place-content: center;
+}
+
+.main__content-wrapper {
+  padding: 5rem 2rem;
+  text-align: center;
+  max-width: 30rem;
+}
+
+.main__title {
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.main__title b {
+  color: var(--Very-Dark-Blue);
+}
+
+.main__description {
+  color: var(--Grayish-Blue);
+  margin-bottom: 4rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.article__card {
+  background: #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 5px 5px #cccc;
+  text-align: left;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.article__title {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+}
+
+.article__text {
+  color: var(--Grayish-Blue);
+  font-size: 0.9em;
+  margin-bottom: 2rem;
+}
+
+.article__card-image-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cyan {
+  border-top: 0.3rem solid var(--Cyan);
+}
+.red {
+  border-top: 0.3rem solid var(--Red);
+}
+.orange {
+  border-top: 0.3rem solid var(--Orange);
+}
+.blue {
+  border-top: 0.3rem solid var(--Blue);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .main__content-wrapper {
+    max-width: none;
+  }
+
+  .section__cards-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  ..section__cards-container > div {
+    flex: 1 1;
+  }
+
+  .article__card {
+    max-width: 20rem;
+  }
 }
