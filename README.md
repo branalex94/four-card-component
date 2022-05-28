@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/branalex94/four-card-component)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://branalex94.github.io/four-card-component/)
 
 ## My process
 
